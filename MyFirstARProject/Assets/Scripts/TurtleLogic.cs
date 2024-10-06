@@ -19,11 +19,11 @@ public class TurtleLogic : MonoBehaviour
         
     }
 
-    private void NeBatem()
+    private void LetsFight()
     {
         this.animator.SetBool("Attack", true);
     }
-    private void AmScapat()
+    private void GotAwayyy()
     {
         this.animator.SetBool("Attack", false);
     }
@@ -31,12 +31,12 @@ public class TurtleLogic : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
        if (other.gameObject.CompareTag("Turtle"))
-            NeBatem();
+            LetsFight();
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Turtle"))
-            AmScapat();
+            GotAwayyy();
         
     }
 }
