@@ -16,7 +16,6 @@ public class TurtleLogic : MonoBehaviour
     void Start()
     {
         this.animator = this.transform.parent.gameObject.GetComponentInChildren<Animator>();
-        Debug.Log(this.animator != null);
     }
 
     private void FixedUpdate()
@@ -53,15 +52,15 @@ public class TurtleLogic : MonoBehaviour
             this.FaceOpponent();
         }
         
-        if (!resting && Time.time > nextRestTime)
+        if (!resting && Time.time >= nextRestTime)
         {
-            resting = true;
             this.Rest();
         }
 
     }
     private void Rest()
     {
+        resting = true;
         this.animator.SetBool("Rest", true);
     }
     private void WakeUp()
@@ -91,7 +90,6 @@ public class TurtleLogic : MonoBehaviour
     {
        if (other.gameObject.CompareTag("Turtle"))
         {
-
             LetsFight(other.transform.parent.gameObject);
         }
     }
