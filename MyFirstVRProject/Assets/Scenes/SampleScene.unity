@@ -1830,8 +1830,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb36cdd6244db9b4eb375d4814237ab2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  ball: {fileID: 0}
+  scoreText: {fileID: 1123406790}
+  ball: {fileID: 1401901663}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ScoreSript : MonoBehaviour
 {
-    private int score = 1000;
+    private int score = 0;
     public Text scoreText;
     public Rigidbody ball;
     // Start is called before the first frame update
@@ -24,15 +24,16 @@ public class ScoreSript : MonoBehaviour
     }
     public void OnHit()
     {
-        SubtractScore(100);
+        AddScore(100);
     }
-    public void SubtractScore(int value)
+    public void AddScore(int value)
     {
-        score -= value;
-        if(score < 0)
-        {
-            score = 0;
-        }
+        score += value;
+        Debug.Log(score);
+        //if(score < 0)
+        //{
+        //    score = 0;
+        //}
         UpdateScore();
     }
 }
