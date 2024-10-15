@@ -21,7 +21,7 @@ public class ClubSpawner : MonoBehaviour
 
         Rigidbody comp = clubRef.GetComponent<Rigidbody>();
         comp.velocity = Vector3.zero;
-        comp.angularVelocity= Vector3.zero;
+        //comp.angularVelocity= Vector3.zero;
 
         clubRef.transform.SetPositionAndRotation(gameObject.transform.position, gameObject.transform.rotation);
 
@@ -31,6 +31,8 @@ public class ClubSpawner : MonoBehaviour
     {
         if(createButton.action.WasPressedThisFrame())
         {
+            if (ScoreManager.instance.IsGameWon())
+                ScoreManager.instance.TryAgain();
             TeleportClub();
         }
     }

@@ -11,5 +11,6 @@ public class WinCondition : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("You reached the end!");
+        ScoreManager.instance.WinGame();
     }
 }

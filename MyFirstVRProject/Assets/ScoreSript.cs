@@ -29,11 +29,7 @@ public class ScoreSript : MonoBehaviour
     public void AddScore(int value)
     {
         score += value;
-        Debug.Log(score);
-        //if(score < 0)
-        //{
-        //    score = 0;
-        //}
+        
         UpdateScore();
     }
 }
