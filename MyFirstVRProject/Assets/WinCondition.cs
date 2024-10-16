@@ -7,7 +7,6 @@ public class WinCondition : MonoBehaviour
 { 
     public GameObject ball; 
     //public ScoreScript scoreManager;
-
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("You reached the end!");

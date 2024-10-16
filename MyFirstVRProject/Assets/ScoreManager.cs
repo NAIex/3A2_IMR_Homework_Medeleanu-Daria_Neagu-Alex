@@ -12,10 +12,17 @@ public class ScoreManager : MonoBehaviour
 
     public TextMeshProUGUI winScoreDisplay;
     public Animator winScreen;
+    public Animator scoreAnimator;
+
     private bool wonGame = false;
 
     private int currentScore = 0;
 
+    private void Init()
+    {
+        if (ScoreManager.instance == null)
+            ScoreManager.instance = this;
+    }
     void Awake()
     {
         Init();
@@ -28,6 +35,7 @@ public class ScoreManager : MonoBehaviour
             return;
         this.currentScore++;
         UpdateText();
+        scoreAnimator.SetTrigger("Score");
     }
     public void WinGame()
     {
@@ -63,9 +71,5 @@ public class ScoreManager : MonoBehaviour
         scoreDisplay.text = "Score: ";
         scoreDisplay.text += CalcScoreString();
     }
-    private void Init()
-    {
-        if (ScoreManager.instance == null)
-            ScoreManager.instance = this;
-    }
+    
 }
