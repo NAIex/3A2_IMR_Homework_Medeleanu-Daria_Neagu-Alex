@@ -1459,7 +1459,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4652631764833915339, guid: 7ebd85dd7974ad0468ef10eef8a01b45, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555694718}
   m_SourcePrefab: {fileID: 100100000, guid: 7ebd85dd7974ad0468ef10eef8a01b45, type: 3}
 --- !u!4 &1077462560 stripped
 Transform:
@@ -2425,6 +2428,35 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 476369984}
   m_SourcePrefab: {fileID: 100100000, guid: d68f361474a7e564cb3da4a4c478114a, type: 3}
+--- !u!1 &1555694716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4652631764833915339, guid: 7ebd85dd7974ad0468ef10eef8a01b45, type: 3}
+  m_PrefabInstance: {fileID: 1031610209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1555694718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555694716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d5832d9b0f76494d8cb0b3f3e56a0f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Grab Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: aa717e4e-474e-491d-836c-80d9a4821a05
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 15759602096507913, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1573090987
 GameObject:
   m_ObjectHideFlags: 0
