@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class HandLogic : MonoBehaviour
 {
     public InputActionProperty grabButton;
+    public InputActionProperty waveButton;
+
     private Animator handAnimator;
 
     private void Awake()
@@ -18,5 +20,8 @@ public class HandLogic : MonoBehaviour
             handAnimator.SetBool("Grabbing",true);
         if (grabButton.action.WasReleasedThisFrame())
             handAnimator.SetBool("Grabbing", false);
+
+        if (waveButton.action.WasPressedThisFrame())
+            handAnimator.SetTrigger("Wave");
     }
 }

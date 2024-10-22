@@ -2457,6 +2457,18 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: 15759602096507913, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  waveButton:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Wave Button
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a2e2fdc2-372b-4339-a8f8-22537e88407b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &1573090987
 GameObject:
   m_ObjectHideFlags: 0
